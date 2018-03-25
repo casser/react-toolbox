@@ -150,7 +150,9 @@ export interface InputProps extends ReactToolbox.Props {
   /**
    * Autocomplete props
    */
-  autoComplete?:"off"|"on"
+  autoComplete?:"off"|"on";
+
+  innerRef:any;
 }
 
 export class Input extends React.Component<InputProps, {}> {
