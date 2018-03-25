@@ -12,7 +12,7 @@ export const AvatarTest:React.SFC<any> = () => (
     <Avatar image="https://placeimg.com/80/80/animals" alt="foobar" />
     <Avatar
       alt="foobar"
-      image="http://www.thewrap.com/wp-content/uploads/2015/08/margot-robbie-harley-quinn_main.jpg" cover
+      image="https://www.thewrap.com/wp-content/uploads/2015/08/margot-robbie-harley-quinn_main.jpg" cover
     />
     <Avatar title="Javier" />
     <Avatar style={{ backgroundColor: 'yellowgreen' }}><GithubIcon /></Avatar>

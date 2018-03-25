@@ -38,13 +38,6 @@ module.exports = {
         }
       ]
     },{
-      test: /\.js$/,
-      use: 'babel-loader',
-      include: [
-        path.join(__dirname, '../components'),
-        path.join(__dirname, '../spec')
-      ]
-    }, {
       test: /\.css$/,
       include: /node_modules/,
       use: ExtractTextPlugin.extract({

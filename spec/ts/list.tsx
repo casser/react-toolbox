@@ -53,25 +53,25 @@ export class ListTest extends React.Component<any, any> {
           <List selectable ripple>
             <ListSubHeader caption="Contacts"/>
             <ListItem
-              avatar="https://pbs.twimg.com/profile_images/614407428/s6pTalMzZs-nusCGWqoV.0_400x400.jpeg"
+              avatar="https://randomuser.me/api/portraits/men/1.jpg"
               caption="Alfonso Rocha"
               legend="Product Manager at Fon"
               rightIcon="star"
             />
             <ListItem
-              avatar="https://pbs.twimg.com/profile_images/693578804808278017/a5y4h8MN_400x400.png"
+              avatar="https://randomuser.me/api/portraits/women/1.jpg"
               caption="Javi Velasco"
               legend="Frontend engineer at Audiense"
               rightIcon="star"
             />
             <ListItem
-              avatar="https://avatars2.githubusercontent.com/u/559654?v=3&s=460"
+              avatar="https://randomuser.me/api/portraits/women/2.jpg"
               caption="Javi Jiménez"
               legend="Frontend engineer at MediaSmart"
               rightIcon="star"
             />
             <ListItem
-              avatar="https://pbs.twimg.com/profile_images/755797598565531649/Whsf9259.jpg"
+              avatar="https://randomuser.me/api/portraits/men/2.jpg"
               caption="Tobias Van Schneider"
               legend="Designer at Spotify"
               rightIcon="star"
@@ -116,22 +116,22 @@ export class ListTest extends React.Component<any, any> {
         <div style={listStyle}>
           <List>
             <ListItem
-              avatar="https://pbs.twimg.com/profile_images/614407428/s6pTalMzZs-nusCGWqoV.0_400x400.jpeg"
+              avatar="https://randomuser.me/api/portraits/women/3.jpg"
               caption="Alfonso Rocha"
               rightIcon="mail"
             />
             <ListItem
-              avatar="https://pbs.twimg.com/profile_images/693578804808278017/a5y4h8MN_400x400.png"
+              avatar="https://randomuser.me/api/portraits/women/4.jpg"
               caption="Javi Velasco"
               rightIcon="mail"
             />
             <ListItem
-              avatar="https://avatars2.githubusercontent.com/u/559654?v=3&s=460"
+              avatar="https://randomuser.me/api/portraits/men/15.jpg"
               caption="Javi Jiménez"
               rightIcon="mail"
             />
             <ListItem
-              avatar="https://pbs.twimg.com/profile_images/755797598565531649/Whsf9259.jpg"
+              avatar="https://randomuser.me/api/portraits/women/5.jpg"
               caption="Tobias Van Schneider"
               rightIcon="mail"
             />
@@ -158,7 +158,7 @@ export class ListTest extends React.Component<any, any> {
             <ListItem leftIcon="send" rightIcon="done" caption="Reference item"/>
             <ListItem rightIcon="done" caption="Item with custom left icons">
               <FontIcon value="send"/>
-              <Avatar image="https://pbs.twimg.com/profile_images/693578804808278017/a5y4h8MN_400x400.png"/>
+              <Avatar image="https://randomuser.me/api/portraits/men/5.jpg"/>
             </ListItem>
             <ListItem leftIcon="send">
               <ListItemContent caption="custom right icons" legend="ListItemContent acts as a divider"/>
@@ -186,7 +186,7 @@ export class ListTest extends React.Component<any, any> {
             <ListItem caption="Item with overlayed click events" onClick={() => console.log('clicked row')}>
               <FontIcon value="send" onClick={() => console.log('clicked icon')}/>
               <Avatar
-                image="https://pbs.twimg.com/profile_images/693578804808278017/a5y4h8MN_400x400.png"
+                image="https://randomuser.me/api/portraits/women/15.jpg"
                 onMouseDown={() => console.log('avatar mouse down, should see ripple')}
                 onClick={() => console.log('clicked avatar')}
               />

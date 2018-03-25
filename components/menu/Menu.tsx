@@ -298,7 +298,6 @@ export class Menu extends React.Component<MenuProps> {
 
   show() {
     const { width, height } = this.menuNode.getBoundingClientRect();
-    console.info(width,height);
     this.setState({ active: true, width, height });
   }
 
@@ -330,9 +329,6 @@ export class Menu extends React.Component<MenuProps> {
       [theme.active]: this.state.active,
       [theme.rippled]: this.state.rippled,
     }, this.props.className);
-
-
-    console.info(rest,className);
 
     return (
       <div data-react-toolbox="menu" className={className} style={this.getRootStyle()}>
