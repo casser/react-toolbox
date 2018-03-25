@@ -1,3 +1,5 @@
+/// <reference path="./globals.d.ts" />
+
 export { overrideComponentTypeChecker } from './utils/is-component-of-type';
 export * from './app_bar/AppBar';
 export * from './autocomplete/Autocomplete';
