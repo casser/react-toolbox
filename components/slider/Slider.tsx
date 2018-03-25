@@ -9,7 +9,7 @@ import events from '../utils/events';
 import { ProgressBar } from '../progress_bar/ProgressBar';
 import { Input } from '../input/Input';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 import {ReactNode} from "react";
 
 export interface SliderTheme {

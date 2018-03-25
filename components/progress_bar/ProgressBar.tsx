@@ -5,7 +5,7 @@ import themr  from '../utils/themr';
 import { PROGRESS_BAR } from '../identifiers';
 import prefixer from '../utils/prefixer';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 export interface ProgressBarTheme {
   /**
    * Used to style the buffer element in the linear progress.

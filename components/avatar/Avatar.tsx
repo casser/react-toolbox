@@ -1,5 +1,5 @@
 import * as React from "react";
-import ReactToolbox from "../index";
+import ReactToolbox from "../types";
 
 //import PropTypes from 'prop-types';
 import classnames from '../utils/classnames';

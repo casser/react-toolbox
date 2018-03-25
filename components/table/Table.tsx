@@ -7,7 +7,8 @@ import isComponentOfType from '../utils/is-component-of-type';
 import { TABLE } from '../identifiers';
 import { TableHead } from './TableHead';
 import { TableRow } from './TableRow';
-
+import theme from './theme.css';
+import ReactToolbox from "../types";
 
 
 export interface TableTheme {
@@ -45,8 +46,7 @@ export interface TableProps extends ReactToolbox.Props {
 
 const isTableHead = child => isComponentOfType(TableHead, child);
 const isTableRow = child => isComponentOfType(TableRow, child);
-import theme from './theme.css';
-import ReactToolbox from "components/index";
+
 
 @themr(TABLE, theme)
 export class Table extends React.Component<TableProps> {

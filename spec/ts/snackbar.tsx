@@ -1,8 +1,7 @@
 import * as React from 'react';
-import Button from '../../components/button';
-import Snackbar from '../../components/snackbar';
+import { Button, Snackbar } from '../../components';
 
-class SnackbarTest extends React.Component<any, any> {
+export class SnackbarTest extends React.Component<any, any> {
   state = {
     active: false,
   };
@@ -24,7 +23,7 @@ class SnackbarTest extends React.Component<any, any> {
       <section>
         <h5>Snackbars & Toasts</h5>
         <p>lorem ipsum...</p>
-        <Button label="Show snackbar" primary raised onClick={this.handleClick} />
+        <Button label="Show snackbar" primary raised onClick={this.handleClick}/>
         <Snackbar
           action="Hide"
           active={this.state.active}

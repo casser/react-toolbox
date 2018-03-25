@@ -9,7 +9,7 @@ import {Tab} from './Tab';
 import {TabContent} from './TabContent';
 import theme from './theme.css';
 import {TabTheme} from "components/tabs/Tab";
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 import {TabContentTheme} from "components/tabs/TabContent";
 import Timer = NodeJS.Timer;
 export interface TabsTheme extends TabTheme, TabContentTheme {

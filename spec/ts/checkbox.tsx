@@ -1,7 +1,7 @@
 import * as React from 'react';
-import Checkbox from '../../components/checkbox';
+import {Checkbox} from '../../components';
 
-class CheckboxTest extends React.Component<any, any> {
+export class CheckboxTest extends React.Component<any, any> {
   state = {
     checkbox_1: true,
     checkbox_2: false,
@@ -52,5 +52,3 @@ class CheckboxTest extends React.Component<any, any> {
     );
   }
 }
-
-export default CheckboxTest;

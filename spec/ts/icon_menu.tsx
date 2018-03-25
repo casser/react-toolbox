@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { MenuItem, IconMenu, MenuDivider } from '../../components/menu';
+import { MenuItem, IconMenu, MenuDivider } from '../../components';
 
-class IconMenuTest extends React.Component<any, any> {
+export class IconMenuTest extends React.Component<any, any> {
   state: any = {
     selected: undefined,
   };
@@ -49,5 +49,3 @@ class IconMenuTest extends React.Component<any, any> {
     );
   }
 }
-
-export default IconMenuTest;

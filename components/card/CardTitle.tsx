@@ -1,5 +1,5 @@
 import * as React from "react";
-import ReactToolbox from "../index";
+import ReactToolbox from "../types";
 import classnames from '../utils/classnames';
 import themr from '../utils/themr';
 import { CARD } from '../identifiers';

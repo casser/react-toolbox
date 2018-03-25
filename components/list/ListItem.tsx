@@ -6,7 +6,7 @@ import {ListItemContent} from './ListItemContent';
 import {ListItemLayout} from './ListItemLayout';
 import {ripple} from '../ripple/Ripple';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 import {ListItemActionsTheme} from "components/list/ListItemActions";
 import {ListItemContentTheme} from "components/list/ListItemContent";
 import {ListItemLayoutTheme} from "components/list/ListItemLayout";
@@ -41,6 +41,12 @@ export interface ListItemProps extends ReactToolbox.Props {
    * In case you want to provide the item as a link, you can pass this property to specify the href.
    */
   to?: string;
+  avatar?:string;
+  caption?:string;
+  legend?:string;
+  leftIcon?:string;
+  rightIcon?:string;
+  selectable?:boolean;
 }
 
 @themr(LIST, theme)

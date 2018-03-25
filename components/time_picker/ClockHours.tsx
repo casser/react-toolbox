@@ -3,7 +3,7 @@ import * as React from "react";
 import { range } from '../utils/utils';
 import Hand from './ClockHand';
 import Face from './ClockFace';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 
 interface HoursProps {
   center: {

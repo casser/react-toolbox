@@ -7,7 +7,7 @@ import { MENU } from '../identifiers';
 import { FontIcon } from '../font_icon/FontIcon';
 import {ripple} from '../ripple/Ripple';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 
 export interface MenuItemTheme {
   /**

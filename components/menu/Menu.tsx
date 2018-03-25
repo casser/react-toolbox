@@ -9,7 +9,7 @@ import { getViewport } from '../utils/utils';
 import { MenuItem } from './MenuItem';
 
 import theme from './theme.css';
-import ReactToolbox from "../index";
+import ReactToolbox from "../types";
 import {ReactNode} from "react";
 import Timer = NodeJS.Timer;
 

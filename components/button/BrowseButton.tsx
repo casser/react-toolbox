@@ -1,5 +1,4 @@
 import * as React from "react";
-import ReactToolbox from "../index";
 import classnames from '../utils/classnames';
 import themr from '../utils/themr';
 import { BUTTON } from '../identifiers';

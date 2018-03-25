@@ -6,7 +6,7 @@ import { TABS } from '../identifiers';
 import { ripple } from '../ripple/Ripple';
 import { FontIcon } from '../font_icon/FontIcon';
 import theme from './theme.css';
-import ReactToolbox from "../index";
+import ReactToolbox from "../types";
 
 
 export interface TabTheme {

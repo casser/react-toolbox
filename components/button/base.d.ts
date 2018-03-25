@@ -1,5 +1,5 @@
 import * as React from "react";
-import ReactToolbox from "../index";
+import ReactToolbox from "../types";
 
 export interface ButtonTheme {
   /**
@@ -83,11 +83,11 @@ export interface ButtonBaseProps extends ReactToolbox.Props {
   /**
    * Fires after the mouse leaves the Component.
    */
-  onMouseLeave?: Function;
+  onMouseLeave?: React.MouseEventHandler<HTMLElement>;
   /**
    * Fires after the mouse is released from the Component.
    */
-  onMouseUp?: Function;
+  onMouseUp?: React.MouseEventHandler<HTMLElement>;
   /**
    * Indicates if the button should have primary color.
    * @default false

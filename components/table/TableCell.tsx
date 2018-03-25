@@ -5,7 +5,7 @@ import themr  from '../utils/themr';
 import { TABLE } from '../identifiers';
 import { FontIcon } from '../font_icon/FontIcon';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 
 const ASC = 'asc';
 const DESC = 'desc';
@@ -39,7 +39,6 @@ export interface TableCellTheme {
    */
   tableCell?: string;
 }
-
 export interface TableCellProps extends ReactToolbox.Props {
   /**
    * The column number of this cell.
@@ -71,6 +70,8 @@ export interface TableCellProps extends ReactToolbox.Props {
    * Classnames object defining the component style.
    */
   theme?: TableCellTheme;
+  // todo improve tooltip mechanism
+  tooltip?:any;
 }
 
 @themr(TABLE, theme)

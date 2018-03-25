@@ -1,8 +1,6 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import Button from '../../components/button';
-import Dialog from '../../components/dialog';
-import Dropdown from '../../components/dropdown';
+import { Button, Dialog, Dropdown } from '../../components';
 
 const dialogTypes = [
   { value: 'small', label: 'small' },
@@ -11,7 +9,7 @@ const dialogTypes = [
   { value: 'fullscreen', label: 'fullscreen' },
 ];
 
-class DialogTest extends React.Component<any, any> {
+export class DialogTest extends React.Component<any, any> {
   state = {
     active: false,
     type: 'normal',
@@ -44,7 +42,7 @@ class DialogTest extends React.Component<any, any> {
           source={dialogTypes}
           value={this.state.type}
         />
-        <Button label="Show Dialog" raised primary onClick={this.handleToggle} />
+        <Button label="Show Dialog" raised primary onClick={this.handleToggle}/>
         <ContextComponent>
           <Dialog
             actions={this.actions}
@@ -54,8 +52,9 @@ class DialogTest extends React.Component<any, any> {
             onOverlayClick={this.handleToggle}
             onEscKeyDown={this.handleToggle}
           >
-            <p>Let Google help apps <strong>determine location</strong>. This means sending anonymous location data to Google, even when no apps are running.</p>
-            <DialogChild />
+            <p>Let Google help apps <strong>determine location</strong>. This means sending anonymous location data to
+              Google, even when no apps are running.</p>
+            <DialogChild/>
           </Dialog>
         </ContextComponent>
       </section>
@@ -92,5 +91,3 @@ class DialogChild extends React.Component<any, any> {
     return <p>This message comes from a parent: <strong>{this.context.message}</strong></p>;
   }
 }
-
-export default DialogTest;

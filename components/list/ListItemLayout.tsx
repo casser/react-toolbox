@@ -9,7 +9,7 @@ import { Avatar } from '../avatar/Avatar';
 import { ListItemContent } from './ListItemContent';
 import { ListItemActions } from './ListItemActions';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 import {ListItemContentTheme} from "components/list/ListItemContent";
 import {ListItemActionsTheme} from "components/list/ListItemActions";
 

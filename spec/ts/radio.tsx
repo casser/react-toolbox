@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { RadioGroup, RadioButton } from '../../components/radio';
+import { RadioGroup, RadioButton } from '../../components';
 
-class RadioGroupTest extends React.Component<any, any> {
+export class RadioGroupTest extends React.Component<any, any> {
   state = {
     value: 'vvendetta',
   };
@@ -35,5 +35,3 @@ class RadioGroupTest extends React.Component<any, any> {
     );
   }
 }
-
-export default RadioGroupTest;

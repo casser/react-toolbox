@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Menu, MenuItem, MenuDivider } from '../../components/menu';
+import { Menu, MenuItem, MenuDivider } from '../../components';
 
-class MenuTest extends React.Component<any, any> {
+export class MenuTest extends React.Component<any, any> {
   state: any = {
     value: undefined,
   };
@@ -34,5 +34,3 @@ class MenuTest extends React.Component<any, any> {
     );
   }
 }
-
-export default MenuTest;

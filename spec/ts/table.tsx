@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { Table, TableHead, TableRow, TableCell } from '../../components/table';
-import Tooltip from '../../components/tooltip';
+import { Table, TableHead, TableRow, TableCell,tooltipFactory } from '../../components';
 
 const data = [
   { name: 'Cupcake', calories: 305, fat: 3.7, carbs: 67, protein: 4.3, sodium: 413, calcium: '3%', iron: '8%' },
@@ -13,7 +12,7 @@ const data = [
   { name: 'KitKat', calories: 518, fat: 26.0, carbs: 65, protein: 7, sodium: 54, calcium: '12%', iron: '6%' },
 ];
 
-const TooltippedCell = Tooltip(TableCell);
+const TooltippedCell = tooltipFactory(TableCell);
 
 const sortByCaloriesAsc = (a: any, b: any) => {
   if (a.calories < b.calories) return -1;
@@ -27,7 +26,7 @@ const sortByCaloriesDesc = (a: any, b: any) => {
   return 0;
 };
 
-class TableTest extends React.Component<any, any> {
+export class TableTest extends React.Component<any, any> {
   state: any = {
     selected: ['Donut'],
     sorted: 'asc',
@@ -87,5 +86,3 @@ class TableTest extends React.Component<any, any> {
     );
   }
 }
-
-export default TableTest;

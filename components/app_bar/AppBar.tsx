@@ -5,7 +5,7 @@ import themr from '../utils/themr';
 import {APP_BAR} from '../identifiers';
 import {IconButton} from '../button/IconButton';
 import theme from './theme.css';
-import ReactToolbox from "../index";
+import ReactToolbox from "../types";
 
 export interface AppBarTheme {
   /**

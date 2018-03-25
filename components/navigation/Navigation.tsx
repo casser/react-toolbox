@@ -6,7 +6,7 @@ import { NAVIGATION } from '../identifiers';
 import { Button } from '../button/Button';
 import { Link } from '../link/Link';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 export interface NavigationTheme {
   /**
    * Used for buttons provided in the component.

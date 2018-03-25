@@ -2,7 +2,7 @@
 import * as React from "react";
 // import PropTypes from 'prop-types';
 import cn from '../utils/classnames';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 import {CSSProperties} from "react";
 
 

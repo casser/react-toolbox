@@ -1,8 +1,17 @@
 import * as React from 'react';
-import { ListCheckbox, ListSubHeader, List, ListItem, ListDivider, ListItemText, ListItemContent } from '../../components/list';
-import { Button } from '../../components/button';
-import Avatar from '../../components/avatar';
-import FontIcon from '../../components/font_icon';
+import {
+  ListCheckbox,
+  ListSubHeader,
+  List,
+  ListItem,
+  ListDivider,
+  ListItemText,
+  ListItemContent,
+  Button,
+  Avatar,
+  FontIcon
+} from '../../components';
+
 
 const listStyle = {
   border: '1px solid #EEE',
@@ -10,7 +19,7 @@ const listStyle = {
   minWidth: 340,
 };
 
-class ListTest extends React.Component<any, any> {
+export class ListTest extends React.Component<any, any> {
   state: any = {
     checkbox1: false,
     checkbox2: true,
@@ -19,7 +28,7 @@ class ListTest extends React.Component<any, any> {
 
   handleCheckboxChange = (field: any) => {
     const newState: any = {};
-    newState[field] = !this.state[field];
+    newState[ field ] = !this.state[ field ];
     this.setState(newState);
   };
 
@@ -30,11 +39,11 @@ class ListTest extends React.Component<any, any> {
         <p>This list can be used inside a Drawer for a list of options or as navigation.</p>
         <div style={listStyle}>
           <List selectable ripple>
-            <ListSubHeader caption="Contacts" />
-            <ListItem caption="Inbox" leftIcon="inbox" />
-            <ListItem caption="Outbox" selectable={false} ripple={false} leftIcon="send" />
-            <ListItem caption="Trash" leftIcon="delete" />
-            <ListItem caption="Spam" leftIcon="report" />
+            <ListSubHeader caption="Contacts"/>
+            <ListItem caption="Inbox" leftIcon="inbox"/>
+            <ListItem caption="Outbox" selectable={false} ripple={false} leftIcon="send"/>
+            <ListItem caption="Trash" leftIcon="delete"/>
+            <ListItem caption="Spam" leftIcon="report"/>
           </List>
         </div>
 
@@ -42,7 +51,7 @@ class ListTest extends React.Component<any, any> {
         <p>Useful for a list of contacts or similar.</p>
         <div style={listStyle}>
           <List selectable ripple>
-            <ListSubHeader caption="Contacts" />
+            <ListSubHeader caption="Contacts"/>
             <ListItem
               avatar="https://pbs.twimg.com/profile_images/614407428/s6pTalMzZs-nusCGWqoV.0_400x400.jpeg"
               caption="Alfonso Rocha"
@@ -74,13 +83,13 @@ class ListTest extends React.Component<any, any> {
         <p>It can be used to embed little checkboxes in the list. These behave as checkboxes.</p>
         <div style={listStyle}>
           <List>
-            <ListSubHeader caption="General" />
-            <ListItem caption="Profile Photo" legend="Change your Google+ profile photo" />
-            <ListItem disabled caption="Show your status" legend="Your status is visible to everyone you use with" />
+            <ListSubHeader caption="General"/>
+            <ListItem caption="Profile Photo" legend="Change your Google+ profile photo"/>
+            <ListItem disabled caption="Show your status" legend="Your status is visible to everyone you use with"/>
           </List>
-          <ListDivider />
+          <ListDivider/>
           <List>
-            <ListSubHeader caption="Hangout notifications" />
+            <ListSubHeader caption="Hangout notifications"/>
             <ListCheckbox
               caption="Notifications"
               checked={this.state.checkbox1}
@@ -133,12 +142,12 @@ class ListTest extends React.Component<any, any> {
         <p>The most simple list.</p>
         <div style={listStyle}>
           <List>
-            <ListItem caption="Alfonso Rocha" />
-            <ListItem caption="Javi Velasco" />
-            <ListItem caption="Javi Jiménez" />
-            <ListItem caption="Tobias Van Schneider" />
-            <ListDivider />
-            <ListItem caption="Other people" />
+            <ListItem caption="Alfonso Rocha"/>
+            <ListItem caption="Javi Velasco"/>
+            <ListItem caption="Javi Jiménez"/>
+            <ListItem caption="Tobias Van Schneider"/>
+            <ListDivider/>
+            <ListItem caption="Other people"/>
           </List>
         </div>
 
@@ -146,15 +155,15 @@ class ListTest extends React.Component<any, any> {
         <p> Using custom components in list item </p>
         <div style={listStyle}>
           <List ripple selectable>
-            <ListItem leftIcon="send" rightIcon="done" caption="Reference item" />
+            <ListItem leftIcon="send" rightIcon="done" caption="Reference item"/>
             <ListItem rightIcon="done" caption="Item with custom left icons">
-              <FontIcon value="send" />
-              <Avatar image="https://pbs.twimg.com/profile_images/693578804808278017/a5y4h8MN_400x400.png" />
+              <FontIcon value="send"/>
+              <Avatar image="https://pbs.twimg.com/profile_images/693578804808278017/a5y4h8MN_400x400.png"/>
             </ListItem>
             <ListItem leftIcon="send">
-              <ListItemContent caption="custom right icons" legend="ListItemContent acts as a divider" />
-              <FontIcon value="done" />
-              <FontIcon value="undo" />
+              <ListItemContent caption="custom right icons" legend="ListItemContent acts as a divider"/>
+              <FontIcon value="done"/>
+              <FontIcon value="undo"/>
             </ListItem>
             <ListItem leftIcon="mail" rightIcon="create">
               <ListItemContent>
@@ -163,17 +172,19 @@ class ListTest extends React.Component<any, any> {
             </ListItem>
             <ListItem leftIcon="save" rightIcon="delete">
               <ListItemContent>
-                <ListItemText primary onClick={() => { console.log('clicked caption'); }}>
+                <ListItemText primary onClick={() => {
+                  console.log('clicked caption');
+                }}>
                   Custom caption with events
                 </ListItemText>
                 <ListItemText> Custom legend with correct height </ListItemText>
               </ListItemContent>
             </ListItem>
             <ListItem caption="Item with a button">
-              <Button icon="save" label="save" onClick={() => console.log('clicked button')} />
+              <Button icon="save" label="save" onClick={() => console.log('clicked button')}/>
             </ListItem>
             <ListItem caption="Item with overlayed click events" onClick={() => console.log('clicked row')}>
-              <FontIcon value="send" onClick={() => console.log('clicked icon')} />
+              <FontIcon value="send" onClick={() => console.log('clicked icon')}/>
               <Avatar
                 image="https://pbs.twimg.com/profile_images/693578804808278017/a5y4h8MN_400x400.png"
                 onMouseDown={() => console.log('avatar mouse down, should see ripple')}
@@ -186,5 +197,3 @@ class ListTest extends React.Component<any, any> {
     );
   }
 }
-
-export default ListTest;

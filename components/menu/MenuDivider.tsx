@@ -4,7 +4,7 @@ import * as React from "react";
 import themr  from '../utils/themr';
 import { MENU } from '../identifiers';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 export interface MenuDividerTheme {
   /**
    *

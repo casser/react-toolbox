@@ -1,7 +1,7 @@
 import * as React from 'react';
-import { Tabs, Tab } from '../../components/tabs';
+import { Tabs, Tab } from '../../components';
 
-class TabsTest extends React.Component<any, any> {
+export class TabsTest extends React.Component<any, any> {
   state = {
     index: 1,
     fixedIndex: 1,
@@ -69,5 +69,3 @@ class TabsTest extends React.Component<any, any> {
     );
   }
 }
-
-export default TabsTest;

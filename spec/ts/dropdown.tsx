@@ -1,7 +1,6 @@
 import * as React from 'react';
-import Dropdown from '../../components/dropdown';
-
-const style = require('../style.css');
+import {Dropdown} from '../../components';
+import style from '../style.css';
 
 const countries = [
   { value: 'EN-gb', label: 'England', img: 'http://' },
@@ -11,7 +10,7 @@ const countries = [
   { value: 'FR-fr', label: 'France', img: 'http://' },
 ];
 
-class DropdownTest extends React.Component<any, any> {
+export class DropdownTest extends React.Component<any, any> {
   state: any = {
     dropdown4: 'TH-th',
   };
@@ -78,5 +77,3 @@ class DropdownTest extends React.Component<any, any> {
     );
   }
 }
-
-export default DropdownTest;

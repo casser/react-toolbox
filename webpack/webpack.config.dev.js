@@ -11,7 +11,7 @@ module.exports = {
   entry: [
     'webpack-hot-middleware/client',
     'babel-polyfill',
-    './spec/index.js'
+    './spec/index.tsx'
   ],
   output: {
     path: path.join(__dirname, 'build'),
@@ -19,7 +19,7 @@ module.exports = {
     publicPath: '/build/'
   },
   resolve: {
-    extensions: ['.js', '.css', '.json','.tsx'],
+    extensions: ['.js', '.css', '.json','.tsx','.ts'],
     modules: ['node_modules'],
     alias: {
       'react': 'preact-compat',

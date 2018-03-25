@@ -6,7 +6,7 @@ import { LIST } from '../identifiers';
 import { Checkbox } from '../checkbox/Checkbox';
 import { ListItemContent } from './ListItemContent';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 export interface ListCheckboxTheme {
   /**
    * Used as a wrapper class for the subheader element.

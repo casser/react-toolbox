@@ -5,7 +5,7 @@ import themr from '../utils/themr';
 import { LIST } from '../identifiers';
 import { ListItem } from './ListItem';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 
 const mergeProp = (propName, child, parent) => (
   child[propName] !== undefined

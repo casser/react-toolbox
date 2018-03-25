@@ -4,7 +4,7 @@ import cn from '../utils/classnames';
 import themr  from '../utils/themr';
 import { TABS } from '../identifiers';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 
 export interface TabContentTheme {
   /**

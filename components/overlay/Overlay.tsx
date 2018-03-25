@@ -56,6 +56,7 @@ export interface OverlayProps {
    * Overlay theme.
    */
   theme?: OverlayTheme;
+  themeNamespace?: string;
 
   lockScroll?:boolean;
 }

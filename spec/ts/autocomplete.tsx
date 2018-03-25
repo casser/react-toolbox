@@ -1,7 +1,7 @@
 import * as  React from 'react';
-import Autocomplete from 'components/autocomplete';
+import {Autocomplete} from '../../components';
 
-class AutocompleteTest extends React.Component<any, any> {
+export class AutocompleteTest extends React.Component<any, any> {
   state: any = {
     simple: 'Spain',
     simpleShowAll: 'England',
@@ -93,4 +93,3 @@ class AutocompleteTest extends React.Component<any, any> {
   }
 }
 
-export default AutocompleteTest;

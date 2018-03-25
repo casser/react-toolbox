@@ -1,14 +1,13 @@
 import * as React from 'react';
-import ProgressBar from '../../components/progress_bar';
-
-const style = require('../style.css');
+import {ProgressBar} from '../../components';
+import style from '../style.css';
 
 const initialState = {
   progress: 0,
   buffer: 10,
 };
 
-class ProgressBarTest extends React.Component<any, any> {
+export class ProgressBarTest extends React.Component<any, any> {
   state = initialState;
 
   componentWillMount() {
@@ -55,5 +54,3 @@ class ProgressBarTest extends React.Component<any, any> {
     );
   }
 }
-
-export default ProgressBarTest;

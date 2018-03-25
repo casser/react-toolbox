@@ -5,7 +5,7 @@ import { RADIO } from '../identifiers';
 import { RadioButton } from './RadioButton';
 import isComponentOfType from '../utils/is-component-of-type';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 
 export interface RadioGroupProps extends ReactToolbox.Props {
   /**

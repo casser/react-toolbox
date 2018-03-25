@@ -1,5 +1,4 @@
 import * as React from "react";
-import ReactToolbox from "../index";
 
 import classnames from '../utils/classnames';
 import themr from '../utils/themr';
@@ -8,7 +7,7 @@ import {FontIcon} from '../font_icon/FontIcon';
 import {ripple} from '../ripple/Ripple';
 import theme from './theme.css';
 
-import { RippleProps } from '../ripple/index';
+import { RippleProps } from '../ripple/Ripple';
 import { ButtonBaseProps, ButtonTheme } from './base';
 
 export interface ButtonProps extends ButtonBaseProps, RippleProps {

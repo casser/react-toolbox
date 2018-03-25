@@ -42,6 +42,7 @@ export interface IconButtonTheme {
   toggle?: string;
 }
 export interface IconButtonProps extends ButtonBaseProps {
+  id?:string;
   /**
    * Creates a link for the button.
    */

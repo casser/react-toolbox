@@ -7,7 +7,7 @@ import { ActivableRenderer } from '../hoc/ActivableRenderer';
 import { Button } from '../button/Button';
 import { Portal } from '../hoc/Portal';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 import Timer = NodeJS.Timer;
 
 export interface SnackbarTheme {

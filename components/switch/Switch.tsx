@@ -5,7 +5,7 @@ import themr  from '../utils/themr';
 import { SWITCH } from '../identifiers';
 import { Thumb } from './Thumb';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 import {ReactNode} from "react";
 
 

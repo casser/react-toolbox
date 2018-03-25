@@ -1,9 +1,9 @@
 import * as React from 'react';
-import {AppBar} from 'components/app_bar/AppBar';
+import {AppBar} from '../../components';
 
 
 
-const AppBarTest: React.SFC<any> = () => (
+export const AppBarTest: React.SFC<any> = () => (
   <section>
     <h5>AppBar</h5>
     <br />
@@ -21,4 +21,3 @@ const AppBarTest: React.SFC<any> = () => (
   </section>
 );
 
-export default AppBarTest;

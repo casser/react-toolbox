@@ -1,22 +1,18 @@
 import * as React from 'react';
-import Button from '../../components/button';
-import Input from '../../components/input';
-import FontIcon from '../../components/font_icon';
-import Tooltip, { tooltipFactory } from '../../components/tooltip';
-import Chip from '../../components/chip';
-import Avatar from '../../components/avatar';
+import {Button,Input,FontIcon,tooltipFactory,Chip,Avatar} from '../../components';
+
 
 const TooltipFontIcon = tooltipFactory({ passthrough: false })(FontIcon);
-const TooltipButton = Tooltip(Button);
-const TooltipInput = Tooltip(Input);
-const TooltipStrong = Tooltip(({ children, ...other }) => {
+const TooltipButton = tooltipFactory()(Button);
+const TooltipInput = tooltipFactory()(Input);
+const TooltipStrong = tooltipFactory()(({ children, ...other }) => {
   delete other.theme;
   return <strong {...other}>{children}</strong>;
 });
-const TooltipStrongDirect = Tooltip('strong');
-const ChipTooltip = Tooltip(Chip);
+const TooltipStrongDirect = tooltipFactory()('strong');
+const ChipTooltip = tooltipFactory()(Chip);
 
-const TooltipTest = () => (
+export const TooltipTest:React.SFC<any> = () => (
   <section>
     <h5>Tooltip</h5>
     <p>Give information on :hover</p>
@@ -45,5 +41,3 @@ const TooltipTest = () => (
     <TooltipFontIcon value="code" tooltip="This is a test with FontIcon" />
   </section>
 );
-
-export default TooltipTest;

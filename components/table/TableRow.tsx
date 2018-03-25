@@ -7,7 +7,7 @@ import { TABLE } from '../identifiers';
 import { Checkbox } from '../checkbox/Checkbox';
 import { TableCell } from './TableCell';
 import theme from './theme.css';
-import ReactToolbox from "../index";
+import ReactToolbox from "../types";
 
 export interface TableRowTheme {
   /**

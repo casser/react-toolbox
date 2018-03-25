@@ -1,6 +1,6 @@
 import * as React from 'react';
-import DatePicker from '../../components/date_picker';
-import TimePicker from '../../components/time_picker';
+import {DatePicker,TimePicker} from '../../components';
+
 
 const datetime = new Date(2015, 10, 16);
 const min_datetime = new Date(new Date(datetime.toString()).setDate(8));
@@ -11,7 +11,7 @@ const today = new Date();
 today.setHours(0, 0, 0, 0);
 const enabledDisabledDates = [new Date(today.getTime()), new Date(today.setDate(today.getDate() - 1))];
 
-class PickersTest extends React.Component<any, any> {
+export class PickersTest extends React.Component<any, any> {
   state: any = {
     date2: datetime,
     firstActive: false,
@@ -127,5 +127,3 @@ class PickersTest extends React.Component<any, any> {
     );
   }
 }
-
-export default PickersTest;

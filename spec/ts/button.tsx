@@ -1,8 +1,8 @@
 import * as React from 'react';
 import GithubIcon from './github_icon';
-import { Button, IconButton, BrowseButton } from '../../components/button';
+import { Button, IconButton, BrowseButton } from '../../components';
 
-const ButtonTest = () => (
+export const ButtonTest: React.SFC<any> = () => (
   <section>
     <h5>Buttons</h5>
     <p>lorem ipsum...</p>
@@ -48,4 +48,3 @@ function rippleEnded() {
   console.log('Ripple animation ended!');
 }
 
-export default ButtonTest;

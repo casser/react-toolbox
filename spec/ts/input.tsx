@@ -1,7 +1,7 @@
 import * as React from 'react';
-import Input from '../../components/input';
+import {Input} from '../../components';
 
-class InputTest extends React.Component<any, any> {
+export class InputTest extends React.Component<any, any> {
   state = {
     normal: 'Tony Stark',
     fixedLabel: '',
@@ -39,5 +39,3 @@ class InputTest extends React.Component<any, any> {
     );
   }
 }
-
-export default InputTest;

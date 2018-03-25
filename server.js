@@ -1,7 +1,6 @@
 const path = require('path');
 const express = require('express');
 const webpack = require('webpack');
-const internalIp = require('internal-ip');
 const config = require('./webpack/webpack.config.dev');
 
 const app = express();
@@ -22,16 +21,13 @@ app.get('*', (req, res) => {
 });
 
 const port = 10001;
-const ip = internalIp.v4();
 
 app.listen(port, (err) => {
   if (err) {
     console.log(err);
     return;
   }
-
   console.log(' --------------------------------------');
   console.log(`    Local: http://0.0.0.0:${port}`);
-  console.log(` External: http://${ip}:${port}`);
   console.log(' --------------------------------------');
 });

@@ -1,7 +1,7 @@
 import * as React from 'react';
-import Link from '../../components/link';
+import {Link} from '../../components';
 
-const LinkTest = () => (
+export const LinkTest:React.SFC<any> = () => (
   <section>
     <h5>Links</h5>
     <p>lorem ipsum...</p>
@@ -9,5 +9,3 @@ const LinkTest = () => (
     <Link label="Inbox" route="http://mail.google.com" icon="inbox" />
   </section>
 );
-
-export default LinkTest;

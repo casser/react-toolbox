@@ -1,7 +1,7 @@
 import * as React from 'react';
-import Switch from '../../components/switch';
+import { Switch } from '../../components';
 
-class SwitchTest extends React.Component<any, any> {
+export class SwitchTest extends React.Component<any, any> {
   state = {
     switch_1: true,
     switch_2: false,
@@ -9,7 +9,7 @@ class SwitchTest extends React.Component<any, any> {
   };
 
   handleChange = (field: any, value: any) => {
-    this.setState({ ...this.state, [field]: value });
+    this.setState({ ...this.state, [ field ]: value });
   };
 
   render() {
@@ -37,5 +37,3 @@ class SwitchTest extends React.Component<any, any> {
     );
   }
 }
-
-export default SwitchTest;

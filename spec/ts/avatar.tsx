@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Avatar from '../../components/avatar';
+import {Avatar} from '../../components';
 import GithubIcon from './github_icon';
 
-const AvatarTest = () => (
+export const AvatarTest:React.SFC<any> = () => (
   <section>
     <h5>Avatars</h5>
     <p>Provide an image source or object, a font icon, children or a title to use its first letter.</p>
@@ -18,5 +18,3 @@ const AvatarTest = () => (
     <Avatar style={{ backgroundColor: 'yellowgreen' }}><GithubIcon /></Avatar>
   </section>
 );
-
-export default AvatarTest;

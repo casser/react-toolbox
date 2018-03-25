@@ -7,7 +7,7 @@ import { MENU } from '../identifiers';
 import { IconButton } from '../button/IconButton';
 import {Menu, MenuTheme} from './Menu';
 import theme from './theme.css';
-import ReactToolbox from "components/index";
+import ReactToolbox from "../types";
 export interface IconMenuTheme extends MenuTheme {
   /**
    * Used for the icon element.

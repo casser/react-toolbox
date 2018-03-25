@@ -1,10 +1,8 @@
 import * as React from 'react';
-import Avatar from '../../components/avatar';
-import Chip from '../../components/chip';
+import {Avatar,Chip} from '../../components';
+import style from '../style.css'
 
-const style = require('../style.css');
-
-class ChipTest extends React.Component<any, any> {
+export class ChipTest extends React.Component<any, any> {
   state = {
     deleted: false,
   };
@@ -62,6 +60,3 @@ class ChipTest extends React.Component<any, any> {
     );
   }
 }
-
-export default ChipTest;
-
